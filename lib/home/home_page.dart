@@ -9,6 +9,7 @@ import 'package:flutter_deer/util/theme_utils.dart';
 import 'package:flutter_deer/widgets/double_tap_back_exit_app.dart';
 import 'package:flutter_deer/widgets/load_image.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_deer/test/page/test_page.dart';
 
 class Home extends StatefulWidget {
 
@@ -23,7 +24,7 @@ class _HomeState extends State<Home> with RestorationMixin{
   static const double _imageSize = 25.0;
 
   late List<Widget> _pageList;
-  final List<String> _appBarTitles = ['订单', '商品', '统计', '店铺'];
+  final List<String> _appBarTitles = ['订单', '商品', '统计', '店铺', '测试'];
   final PageController _pageController = PageController();
 
   HomeProvider provider = HomeProvider();
@@ -49,6 +50,7 @@ class _HomeState extends State<Home> with RestorationMixin{
       const GoodsPage(),
       const StatisticsPage(),
       const ShopPage(),
+      const Test1Page()
     ];
   }
 
@@ -98,6 +100,10 @@ class _HomeState extends State<Home> with RestorationMixin{
         [
           LoadAssetImage('home/icon_statistics', width: _imageSize),
           LoadAssetImage('home/icon_statistics', width: _imageSize, color: Colours.dark_app_main,),
+        ],
+        [
+          LoadAssetImage('home/icon_shop', width: _imageSize),
+          LoadAssetImage('home/icon_shop', width: _imageSize, color: Colours.dark_app_main,),
         ],
         [
           LoadAssetImage('home/icon_shop', width: _imageSize),

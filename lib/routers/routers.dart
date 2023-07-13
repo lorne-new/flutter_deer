@@ -12,6 +12,7 @@ import 'package:flutter_deer/setting/setting_router.dart';
 import 'package:flutter_deer/shop/shop_router.dart';
 import 'package:flutter_deer/statistics/statistics_router.dart';
 import 'package:flutter_deer/store/store_router.dart';
+import 'package:flutter_deer/test/test_router.dart';
 
 class Routes {
 
@@ -49,6 +50,7 @@ class Routes {
     _listRouter.add(AccountRouter());
     _listRouter.add(SettingRouter());
     _listRouter.add(StatisticsRouter());
+    _listRouter.add(TestRouter());
   
     /// 初始化路由
     void initRouter(IRouterProvider routerProvider) {
