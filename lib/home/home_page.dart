@@ -72,6 +72,10 @@ class _HomeState extends State<Home> with RestorationMixin{
         [
           LoadAssetImage('home/icon_shop', width: _imageSize, color: Colours.unselected_item_color,),
           LoadAssetImage('home/icon_shop', width: _imageSize, color: Colours.app_main,),
+        ],
+        [
+          LoadAssetImage('home/icon_shop', width: _imageSize, color: Colours.unselected_item_color,),
+          LoadAssetImage('home/icon_shop', width: _imageSize, color: Colours.app_main,),
         ]
       ];
       _list = List.generate(tabImages.length, (i) {
